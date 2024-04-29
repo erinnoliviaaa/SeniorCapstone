@@ -11,14 +11,12 @@ html{
   height: 100vh;
   position: relative;
   overflow: hidden;
-  /*background: #FFD465;*/
   background-image: url('https://www.rollins.edu/post-office/images/campus-center-entrance.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 nav{
   width: 100%;
   position: sticky;
@@ -26,7 +24,6 @@ nav{
   z-index: 1000;
   background-color: #65B5FF;
 }
-
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -34,7 +31,6 @@ nav{
   width: 100%;
   padding: 10px 0;
 }
-
 .navbar a {
   color: #333;
   text-decoration: none;
@@ -59,7 +55,7 @@ nav{
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: gold;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -69,6 +65,7 @@ nav{
   display: block;
 }
 
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -76,15 +73,7 @@ nav{
   display: block;
 }
 
-.top-section{
-  background-color: #65B5FF;
-  padding: 20;
-  color: white;
-  width: 100%;
-  position: fixed;
-
-}
-
+/* Feedback Button */
 .feedback-button{
   position: fixed;
   bottom: 20px;
@@ -97,8 +86,55 @@ nav{
   cursor: pointer;
 }
 
+.foodfeedback-button{
+  position: fixed;
+  right: 20px;
+  top: 160px;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-color: #65B5FF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* this is what I used for the title of the page for Lunch, Breakfeast, etc.
+*/
 .title-text{
   text-align: center;
   color: black;
   margin-top: 20px;
 }
+
+.header p{
+  text-align: center;
+}
+
+
+/* Home button */
+.material-symbols-outlined{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  color: #65B5FF;
+  border: none;
+  background: none;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 20vh; /* Set a height for the banner */
+}
+
+.banner h1 {
+  font-size: 5rem;
+  color: #65B5FF; /* Blue color to match the navbar */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0;
+}
+

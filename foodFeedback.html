@@ -1,94 +1,66 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Food-Feedback</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Food Feedback</title>
+  <link href="foodFeedback.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-  <link href="foodStyle.css" rel="stylesheet" type="text/css" />
 </head>
-
-
 <body>
-  <div class="main-area">
-    <div class="header">
+  <div class="header-container">
+    <h1>Food Feedback</h1>
+  </div>
+  <br />
 
-      <!-- The header --> 
-      <nav>
-        <div class="navbar">
-        <h1>WE VALUE YOUR FEEDBACK</h1>
-        </div>
-      </nav>
+  <div class="feedback-text">
+    <p>Give your feedback on the dining hall today!.</p>
+  </div>
 
-      <p>
-        Give your feedback on the dining hall today! 
-      </p>
-      </div>
-    <br><br>
-
-    <!-- Enter the First name --> 
-    <!-- <div class = "firstname">
-    First Name
-     <br>
-    <input type="text" name="Firstname" value="" required>
-      <br>
-      <br>
-    </div> --> 
-
-    <!-- Enter the First name --> 
-    <label for="First Name">First Name:</label>&nbsp
-    <input type="text" id="FirstName" name="First Name" placeholder="First name">&nbsp&nbsp
-    <!-- Enter the Last name --> 
-    <label for="Last Name">Last Name:</label>&nbsp
-    <input type="text" id="LastName" name="Last Name" placeholder="Last name">&nbsp&nbsp
-
-    <!-- Enter the Email address --> 
-    <label for="Email">Rollins Email Address:</label>&nbsp
-    <input type="text" id="Email" name="Email" placeholder="Email">
-
-    <!-- Enter the Last name --> 
-    <!-- <div class = "lastname">
-    Last Name
-      <br>
-    <input type="text" name="Lastname" value="" required>
-      <br>
-      <br>
-    </div> -->
-
-    <br>
-    <br>
+  <!-- Feedback Form -->
+  <form id="feedbackForm" action="http://localhost:4000/foodFeedback" method="post">
 
 
-    <!-- Enter the Email address --> 
-   <!-- <div class = "email">
-    Rollins Email Address
-      <br>
-    <input type="text" id="Email"name="email" placeholder ="Email">
-    </div> -->
 
-    <br><br>
-  <!-- Enter the feedback --> 
-    <div class = "feedback">
-    Please Enter Your Feedback!
-    <br>
+      <!-- Dropdown menu for selecting meal type -->
+    <label for="mealType">Meal Type:</label>
+    <select id="mealType" name="mealType" >
+        <option value="Breakfast">Breakfast</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Dinner">Dinner</option>
+        <option value="Brunch">Brunch</option>
+        <option value="WeekendDinner">Weekend Dinner</option>
+    </select><br>
 
-       <textarea id="freeform" name="Feedback" rows="4" cols="50">Enter text here...
-       </textarea>
-     <br><br>
+    <label for="foodName">Food Name:</label>
+    <input type="text" id="foodName" name="foodName" required><br>
 
-    <!-- Submit Button -->
-    <!--<button class="button button1">Submit </button>-->
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
 
-      <form action = "https://ba130874-111b-4aa8-b236-89bbd4ba36ff-00-16l6537n7xy4i.spock.repl.co/">
-          <button class = "button button1">
-              Submit
-          </button>
-      </form>
+      <button type="submit" id="submitFeedbackBtn">Submit Feedback</button>
+  </form>
+
+  <div class="filter-section">
+    <input type="text" id="foodNameFilter" placeholder="Enter food name to filter feedback">
+    <button id="filterFeedbackBtn">Filter Feedback</button>
+  </div>
+  <!-- Container for displaying feedback -->
+  <div id="feedbackContainer">
+      <!-- Feedback will be displayed here -->
+  </div>
+
+  
+  </form>
+  <form action = "index.html">
+    <button class="button material-symbols-outlined" style="font-size:36px;" >
+    home
+    </button>
+    </form>
 
 
-      </div>
-   <script src="script.js"></script>
-    </body>
- </div>
+    <script src= "foodFeedback.js"></script>
+</body>
 </html>

@@ -1,0 +1,24 @@
+.rating{
+  display: flex;
+  flex-direction: row-reverse;
+  display: inline-block; 
+}
+
+.rating-wrapper{
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.rating span{
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.rating span:hover{
+  color: #65B5FF;
+}
+
+.rating span[data-clicked]{
+  color: #65B5FF;
+}

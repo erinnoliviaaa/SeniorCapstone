@@ -1,7 +1,7 @@
 var weekdayButton = document.getElementById("weekdayDropdown");
 var weekendButton = document.getElementById("weekendDropdown");
 
-function toggleDropdown(dropdown){
+function toggleDropdown(dropdown) {
   if (dropdown.style.display === "block") {
     dropdown.style.display = "none";
   } else {
@@ -9,12 +9,12 @@ function toggleDropdown(dropdown){
   }
 }
 
-document.querySelector('.navbar a[href="#weekday"]').addEventListener('click', function(event){
+document.querySelector('.navbar a[href="#weekday"]').addEventListener('click', function(event) {
   event.preventDefault();
   toggleDropdown(weekdayButton);
 }, false);
 
-document.querySelector('.navbar a[href="#weekend"]').addEventListener('click', function(event){
+document.querySelector('.navbar a[href="#weekend"]').addEventListener('click', function(event) {
   event.preventDefault();
   toggleDropdown(weekendButton);
 }, false);

@@ -1,0 +1,78 @@
+
+#dinnerMenu h2 {
+    color: #65B5FF; /* Change color as needed */
+  
+}
+#dinnerMenu{
+  text-align: full;
+  margin: 5%
+}
+#weekend_dinnerMenu{
+  text-align: full;
+  margin: 5%
+}
+#brunchMenu{
+  text-align: full;
+  margin: 5%
+}
+#breakfastMenu{
+  text-align: full;
+  margin: 5%
+}
+#lunchMenu{
+  text-align: full;
+  margin: 5%
+}
+#weekend_dinnerMenu{
+  text-align: full;
+  margin: 5%
+}
+
+/* Remove bullet points for menu items */
+#dinnerMenu ul {
+    list-style-type: none; /* Remove default list styling */
+}
+
+
+#weekend_dinnerMenu h2 {
+    color: #65B5FF; /* Change color as needed */
+}
+
+
+/* Remove bullet points for menu items */
+#weekend_dinnerMenu ul {
+    list-style-type: none; /* Remove default list styling */
+}
+
+
+#breakfastMenu h2 {
+    color: #65B5FF; /* Change color as needed */
+}
+
+/* Remove bullet points for menu items */
+#breakfastMenu ul {
+    list-style-type: none; /* Remove default list styling */
+}
+
+
+
+#lunchMenu h2 {
+    color: #65B5FF; /* Change color as needed */
+}
+
+/* Remove bullet points for menu items */
+#lunchMenu ul {
+    list-style-type: none; /* Remove default list styling */
+}
+
+
+#brunchMenu h2 {
+    color: #65B5FF; /* Change color as needed */
+}
+
+/* Remove bullet points for menu items */
+#brunchMenu ul {
+    list-style-type: none; /* Remove default list styling */
+}
+
+
